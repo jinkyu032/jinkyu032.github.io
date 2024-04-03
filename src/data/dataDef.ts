@@ -93,6 +93,13 @@ export interface TimelineItem {
   content: JSX.Element;
 }
 
+export interface PublicationsItem {
+  authors: string;
+  title: string;
+  content: JSX.Element;
+}
+
+
 /**
  * Testimonial section
  */
@@ -125,6 +132,7 @@ export const ContactType = {
   Facebook: 'Facebook',
   Twitter: 'Twitter',
   Instagram: 'Instagram',
+  GoogleScholar: 'GoogleScholar',
 } as const;
 
 export type ContactType = (typeof ContactType)[keyof typeof ContactType];
