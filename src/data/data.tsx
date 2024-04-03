@@ -1,18 +1,10 @@
-import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import {CalendarIcon, FlagIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
+// import LinkedInIcon from '../components/Icon/LinkedInIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -35,10 +27,10 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  PublicationsItem,
   SkillGroup,
   Social,
   TestimonialSection,
-  PublicationsItem,
   TimelineItem,
 } from './dataDef';
 
@@ -70,24 +62,6 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Jinkyu Kim.`,
-  description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a Ph.D. student  at the <strong><a href="https://cv.snu.ac.kr/" className="text-stone-100">SNU Computer Vision Lab</a></strong> under the supervision of <strong><a href="https://cv.snu.ac.kr/index.php/~bhhan/" className="text-stone-100">Prof. Bohyung Han</a></strong>. <br/>
-        My current research focuses on federated learning, addressing data governance and privacy challenges through collaborative algorithm training, thereby eliminating the need for raw data exchange.
-        {/* I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder. */}
-      </p>
-      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p> */}
-    </>
-  ),
   actions: [
     // {
     //   // href: '../pdf/Jinkyu_Kim_CV.pdf',
@@ -102,6 +76,24 @@ export const heroData: Hero = {
       primary: false,
     },
   ],
+  description: (
+    <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I am a Ph.D. student  at the <a className="text-stone-100" href="https://cv.snu.ac.kr/"><strong>SNU Computer Vision Lab</strong></a> under the supervision of <a className="text-stone-100" href="https://cv.snu.ac.kr/index.php/~bhhan/"><strong>Prof. Bohyung Han</strong></a>. <br/>
+        My current research focuses on federated learning, addressing data governance and privacy challenges through collaborative algorithm training, thereby eliminating the need for raw data exchange.
+        {/* I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+        registrar and site builder. */}
+      </p>
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
+        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">Vancouver Island</strong>.
+      </p> */}
+    </>
+  ),
+  imageSrc: heroImage,
+  name: `I'm Jinkyu Kim.`,
 };
 
 /**
