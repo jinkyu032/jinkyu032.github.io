@@ -308,18 +308,18 @@ export const publications: PublicationsItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Apr 2016 - Apr 2018',
-    location: 'Republic of Korea Airforce',
-    title: 'Military Service',
+    date: 'Jun 2019 - Aug 2019    ',
+    location: 'Samsung Seoul R&D Campus',
+    title: 'Intern',
     content: (
       <p>
       </p>
     ),
   },
   {
-    date: 'Jun 2019 - Aug 2019    ',
-    location: 'Samsung Seoul R&D Campus',
-    title: 'Intern',
+    date: 'Apr 2016 - Apr 2018',
+    location: 'Republic of Korea Airforce',
+    title: 'Military Service',
     content: (
       <p>
       </p>
