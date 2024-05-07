@@ -32,6 +32,7 @@
 // export default CVIcon;
 
 import {FC, memo} from 'react';
+
 import Icon, {IconProps} from './Icon';
 
 const CVIcon: FC<IconProps> = memo(props => (
