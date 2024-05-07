@@ -95,6 +95,7 @@ export interface TimelineItem {
 
 export interface PublicationsItem {
   authors: string;
+  linkurl : string;
   title: string;
   content: JSX.Element;
 }

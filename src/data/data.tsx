@@ -33,6 +33,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import CVIcon from '../components/Icon/CVIcon';
 
 /**
  * Page meta data
@@ -68,13 +69,13 @@ export const heroData: Hero = {
     //   href: '../images/portfolio/portfolio-11.jpg',
     //   text: 'Resume',
     //   primary: true,
-    //   Icon: ArrowDownTrayIcon,
+    //   //Icon: ArrowDownTrayIcon,
     // },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
   description: (
     <>
@@ -279,6 +280,7 @@ export const education: TimelineItem[] = [
 export const publications: PublicationsItem[] = [
   {
     authors: 'Seonguk Seo*, Jinkyu Kim*, Geeho Kim*, Bohyung Han',
+    linkurl: 'https://arxiv.org/abs/2401.04928v1',
     title: 'Relaxed Contrastive Learning for Federated Learning',
     content: (
       <p>
@@ -288,6 +290,7 @@ export const publications: PublicationsItem[] = [
   },
   {
     authors: 'Geeho Kim*, Jinkyu Kim*, Bohyung Han',
+    linkurl: 'https://arxiv.org/abs/2201.03172v2',
     title: 'Communication-Efficient Federated Learning with Accelerated Client Gradient',
     content: (
       <p>
@@ -297,6 +300,7 @@ export const publications: PublicationsItem[] = [
   },
   {
     authors: 'Jinkyu Kim*, Geeho Kim*, Bohyung Han',
+    linkurl: 'https://arxiv.org/abs/2207.06936',
     title: 'Multi-Level Branched Regularization for Federated Learning',
     content: (
       <p>
@@ -381,6 +385,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
+  {label: 'CV', Icon: CVIcon, href: "https://drive.google.com/file/d/1ch2FUJD9PP17DKk0JU_6BXgpbdYPqX1A/view?usp=sharing"},
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jinkyu032'},
   {label: 'Google Scholar', Icon: GoogleScholarIcon, href: 'https://scholar.google.com/citations?user=qsbgoXIAAAAJ&hl=ko'},
 ];
