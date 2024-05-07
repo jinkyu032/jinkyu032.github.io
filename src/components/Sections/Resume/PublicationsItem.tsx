@@ -9,7 +9,7 @@ const PublicationsItem: FC<{item: PublicationsItem}> = memo(({item}) => {
       <div className="flex flex-col pb-4">
           {/* Wrap the title within an 'a' tag */}
           <h2 className="text-xl font-bold">
-            <a href={linkurl} className="text-blue-500 underline hover:text-blue-700">
+            <a className="text-blue-500 underline hover:text-blue-700" href={linkurl}>
             {title}
             </a>
         </h2>
