@@ -1,5 +1,6 @@
 import {CalendarIcon, FlagIcon} from '@heroicons/react/24/outline';
 
+import CVIcon from '../components/Icon/CVIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
 // import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -33,7 +34,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
-import CVIcon from '../components/Icon/CVIcon';
+
 
 /**
  * Page meta data
