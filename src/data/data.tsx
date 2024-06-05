@@ -267,7 +267,7 @@ export const education: TimelineItem[] = [
   {
     date: 'Mar 2021 - Current',
     location: 'Seoul National University',
-    title: 'Ph.D. Candidate',
+    title: 'Ph.D. Student',
     content: <p>Electrical and Computer Engineering    </p>,
   },
   {
